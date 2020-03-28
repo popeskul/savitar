@@ -1,0 +1,66 @@
+// font
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600&display=swap");
+$font-raleway: "Raleway", sans-serif;
+$font-family: $font-raleway;
+
+$grid-columns: 12;
+$grid-gutter-width: 30px;
+
+$grid-breakpoints: (
+  // Extra small screen / phone
+    xs: 0,
+  // Small screen / phone
+    sm: 576px,
+  // Medium screen / tablet
+    md: 768px,
+  // Large screen / desktop
+    lg: 992px,
+  // Extra large screen / wide desktop
+    xl: 1250px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 1050px,
+  xl: 1234px
+);
+
+// color: var(--blue);
+
+// media
+// @include media-breakpoint-up(sm) {}
+// @include media-breakpoint-up(md) {}
+// @include media-breakpoint-up(lg) {}
+// @include media-breakpoint-up(xl) {}
+
+// @include media-breakpoint-down(xs) {}
+// @include media-breakpoint-down(sm) {}
+// @include media-breakpoint-down(md) {}
+// @include media-breakpoint-down(lg) {}
+
+// grid
+// .col- .col-sm-  .col-md-  .col-lg-  .col-xl-
+// .col- .col-6    .col-
+// .col- .col-     .col-
+// .no-gutters - No gutters
+
+// Creates a wrapper for a series of columns
+// @include make-container();
+// @include make-row();
+
+// Make the element grid-ready (applying everything but the width)
+// @include make-col-ready();
+// @include make-col($size, $columns: $grid-columns);
+
+// Get fancy by offsetting, or changing the sort order
+// @include make-col-offset($size, $columns: $grid-columns);
+
+// color
+
+.container {
+  @media (max-width: 700px) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}

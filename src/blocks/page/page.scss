@@ -1,0 +1,123 @@
+// Make viewport responsive
+// http://timkadlec.com/2012/10/ie10-snap-mode-and-responsive-design/
+@at-root {
+  @-ms-viewport {
+    /* stylelint-disable-line  at-rule-no-vendor-prefix */
+    width: device-width;
+  }
+}
+
+.page {
+  // html
+  box-sizing: border-box;
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -ms-overflow-style: scrollbar;
+  -ms-text-size-adjust: 100%; /* stylelint-disable-line  property-no-vendor-prefix */
+  min-width: 320px;
+  min-height: 100%;
+
+  &__inner {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    &--ad {
+      padding-bottom: 140px;
+
+      .page-footer {
+      }
+    }
+  }
+
+  &__content {
+    z-index: 2;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__main-content {
+    position: relative;
+    z-index: 1;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+    // Привет, днище 11й версии!
+    @media all and (-ms-high-contrast: none) {
+      // min-height: calc(100vh - #{$header-height});
+    }
+
+    &--error-page {
+      justify-content: center;
+    }
+  }
+
+  &__footer-wrapper {
+    z-index: 2;
+    flex-shrink: 0;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #fff;
+  margin: 0;
+  min-height: 100%;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+  }
+}
+
+[tabindex="-1"]:focus {
+  outline: none !important;
+}
+
+// iOS 'clickable elements' fix for role='button'
+[role="button"] {
+  cursor: pointer;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+// Avoid 300ms click delay on touch devices that support the `touch-action` CSS property.
+a,
+// area,
+button,
+[role='button'],
+input,
+label,
+select,
+// summary,
+textarea {
+  touch-action: manipulation;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

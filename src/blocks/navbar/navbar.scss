@@ -1,0 +1,11 @@
+.navbar {
+  $block-name: &; // #{$block-name}__element {}
+
+  &--header {
+    padding: 0;
+
+    @include media-breakpoint-up(lg) {
+      align-items: flex-start;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+body {
+  min-width: 320px;
+  font-size: 16px;
+  color: black;
+  font-family: $font-family;
+}
+
+.container {
+  @include media-breakpoint-up(lg) {
+  }
+}

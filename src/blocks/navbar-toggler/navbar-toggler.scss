@@ -1,0 +1,4 @@
+.navbar-toggler {
+  $block-name: &; // #{$block-name}__element {}
+  outline: none !important;
+}

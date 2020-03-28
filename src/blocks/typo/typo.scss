@@ -1,0 +1,40 @@
+// Этот блок ответственнен за типографику проекта.
+// Не пишите тут какую-либо стороннюю стилизацию.
+
+.h1,
+h1 {
+  @include media-breakpoint-up(lg) {
+  }
+}
+
+.h2,
+h2 {
+  @include media-breakpoint-up(lg) {
+  }
+}
+
+.h3,
+h3 {
+  @include media-breakpoint-up(lg) {
+  }
+}
+
+.h4,
+h4 {
+  @include media-breakpoint-up(lg) {
+  }
+}
+
+p,
+.text {
+  @include media-breakpoint-up(lg) {
+  }
+}
+
+a,
+.link {
+  &:hover,
+  &:focus {
+    text-decoration: none !important;
+  }
+}

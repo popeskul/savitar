@@ -1,0 +1,199 @@
+// В этом файле должны быть стили для БЭМ-блока btn, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.btn {
+  $block-name: &; // #{$block-name}__element {}
+  font-size: 13px;
+  outline: none !important;
+  border: none;
+  transition: background 0.15s ease-in-out, color 0.15s ease-in-out,
+    opacity 0.15s ease-in-out;
+  white-space: nowrap;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 15px;
+  }
+
+  &-primary {
+    color: #ffffff;
+    background: rgb(255, 145, 16);
+    padding: 12px 26px 12px 26px;
+    border-radius: 21px;
+    box-shadow: inset 0px -2px 0px 0px #ef7317;
+    font-weight: bold;
+
+    @include media-breakpoint-up(md) {
+    }
+
+    &:hover,
+    &:focus {
+      background: rgb(255, 145, 16);
+      box-shadow: inset 0px -2px 0px 0px #ef7317;
+    }
+
+    &:active {
+    }
+
+    &:not(:disabled):not(.disabled):active {
+      background: rgb(255, 145, 16);
+
+      &:focus {
+        box-shadow: inset 0px -2px 0px 0px #ef7317;
+      }
+    }
+  }
+
+  &-outline-primary {
+    font-size: 14px;
+    color: rgb(255, 145, 16);
+    background: white;
+    border: none;
+    padding: 12px 26px 12px 26px;
+    border-radius: 21px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 0px 1px #ef7317;
+    font-weight: bold;
+    outline: none !important;
+
+    @include media-breakpoint-up(md) {
+    }
+
+    &:hover,
+    &:focus {
+      color: white;
+      box-shadow: inset 0px -2px 0px 0px #ef7317, 0px 0px 0px 1px #ef7317;
+    }
+
+    &:active {
+    }
+
+    &:not(:disabled):not(.disabled):active {
+      color: white(255, 145, 16);
+
+      &:focus {
+        box-shadow: inset 0px -2px 0px 0px #ef7317;
+      }
+    }
+  }
+
+  &-link {
+    color: var(--danger);
+    font-weight: bold;
+
+    img {
+      vertical-align: bottom;
+    }
+
+    &:hover,
+    &:focus {
+      color: var(--danger);
+      text-decoration: none;
+      opacity: 0.8;
+    }
+  }
+
+  &-light {
+    box-shadow: 5px 6px 30px 0px rgba(0, 0, 0, 0.15);
+    background: white;
+    border-radius: 30px;
+
+    @include media-breakpoint-up(md) {
+    }
+
+    &:hover,
+    &:focus {
+      box-shadow: 5px 6px 30px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    &:active {
+      // box-shadow: 5px 6px 30px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    &:not(:disabled):not(.disabled):active {
+      &:focus {
+      }
+    }
+
+    &:not(:disabled):not(.disabled):active:focus,
+    &:not(:disabled):not(.disabled).active:focus,
+    .show > &.dropdown-toggle:focus {
+      box-shadow: 5px 6px 30px 0px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  &-danger {
+    color: #ffffff;
+    background: var(--danger);
+    border: none;
+    padding: 12px 26px 12px 26px;
+    border-radius: 21px;
+    letter-spacing: 0.2px;
+    box-shadow: inset 0px -2px 0px 0px var(--danger);
+    font-weight: 600;
+    outline: none !important;
+    box-shadow: 0px 10px 15px 0px rgba(239, 93, 85, 0.5);
+
+    @include media-breakpoint-up(md) {
+    }
+
+    &:hover,
+    &:focus {
+      background: var(--danger);
+      box-shadow: 0px 10px 15px 0px rgba(239, 93, 85, 0.5);
+      opacity: 0.8;
+    }
+
+    &:active {
+    }
+
+    &:not(:disabled):not(.disabled):active {
+      background: var(--danger);
+
+      &:focus {
+        box-shadow: 0px 10px 15px 0px rgba(239, 93, 85, 0.5);
+      }
+    }
+  }
+
+  &-select {
+    min-height: 44px;
+    display: flex;
+    padding-left: 16px;
+    align-items: center;
+    font-size: 15px;
+    line-height: 18px;
+    background-color: white;
+    font-weight: bold;
+    padding: 0 0 0 13px;
+    letter-spacing: -0.5px;
+
+    .icon {
+      margin-right: 10px;
+    }
+
+    .bootstrap-select {
+      border-left: 1px solid rgba(204, 207, 218, 0.15);
+    }
+
+    &:hover,
+    &:focus {
+      background-color: white;
+    }
+
+    &:active {
+    }
+
+    &:not(:disabled):not(.disabled):active {
+      background-color: white;
+
+      &:focus {
+      }
+    }
+  }
+
+  &.disabled,
+  disabled {
+  }
+}

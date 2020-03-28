@@ -1,0 +1,50 @@
+.page-footer {
+  $block-name: &;
+
+  @include media-breakpoint-up(xs) {
+  }
+  @include media-breakpoint-up(sm) {
+  }
+  @include media-breakpoint-up(md) {
+  }
+  @include media-breakpoint-up(lg) {
+  }
+  @include media-breakpoint-up(xl) {
+  }
+
+  &__inner {
+    @include media-breakpoint-up(xs) {
+    }
+    @include media-breakpoint-up(sm) {
+    }
+    @include media-breakpoint-up(md) {
+    }
+    @include media-breakpoint-up(lg) {
+    }
+    @include media-breakpoint-up(xl) {
+    }
+  }
+
+  &__main {
+    position: relative;
+    padding-top: 16px;
+    padding-bottom: 4px;
+
+    @include media-breakpoint-up(sm) {
+      padding-top: 9px;
+    }
+    @include media-breakpoint-up(lg) {
+      padding-bottom: 20px;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 0;
+      width: 100%;
+      box-shadow: 0px -8px 10px 0px rgba(0, 0, 0, 0.1);
+      height: 10px;
+    }
+  }
+}
