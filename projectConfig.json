@@ -21,7 +21,11 @@
     "bootstrap-select": [],
     "navbar-toggler": [],
     "social": [],
-    "search-mini": []
+    "search-mini": [],
+    "main-promo": [],
+    "search-promo": [],
+    "card": [],
+    "slider-cards": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

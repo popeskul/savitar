@@ -1,0 +1,70 @@
+.card {
+  $block-name: &; // #{$block-name}__element {}
+  background-size: cover;
+
+  &__promo {
+    width: 300px;
+    border: none;
+    background-color: transparent;
+    background-color: white;
+    box-shadow: 0px 6px 30px #d6d7da;
+    padding: 20px 20px;
+    min-height: 400px;
+
+    @include media-breakpoint-up(md) {
+      width: 292px;
+      padding: 34px 39px 30px 39px;
+    }
+    @include media-breakpoint-up(lg) {
+      height: 440px;
+    }
+
+    #{$block-name} {
+      &-body {
+        padding: 0;
+      }
+      &-footer {
+        padding: 0;
+        background-color: transparent;
+        border: none;
+      }
+      &-img {
+        margin-bottom: 15px;
+      }
+    }
+
+    .h3 {
+      margin-bottom: 35px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .btn {
+      margin-top: 8px;
+    }
+
+    &--main {
+      @include media-breakpoint-up(sm) {
+        width: 350px;
+      }
+      @include media-breakpoint-up(lg) {
+        width: 580px;
+      }
+    }
+
+    &--mini {
+      @include media-breakpoint-up(lg) {
+        padding-right: 29px;
+      }
+
+      #{$block-name} {
+      }
+
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+}

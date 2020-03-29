@@ -4,7 +4,6 @@
 
 .page-header {
   $block-name: &; // #{$block-name}
-  position: relative;
   padding-top: 19px;
 
   @include media-breakpoint-up(sm) {
@@ -140,5 +139,13 @@
 
   &__language {
     font-size: 13px;
+  }
+
+  &--absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
   }
 }

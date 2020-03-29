@@ -8,12 +8,14 @@
   </head>
   <body>
     <div class="page__inner">
-      <header class="page-header" role="banner">
+      <header class="page-header page-header--absolute" role="banner">
         @@include('blocks/page-header/page-header.html')
       </header>
 
       <div class="page__content">
-        <main class="page__main-content" role="main"></main>
+        <main class="page__main-content" role="main">
+          @@include('blocks/main-promo/main-promo.html')
+        </main>
       </div>
 
       <div class="page__footer-wrapper">

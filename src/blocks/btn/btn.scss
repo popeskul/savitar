@@ -44,6 +44,37 @@
     }
   }
 
+  &-secondary {
+    color: black;
+    background: var(--secondary);
+    padding: 9px 26px 9px 26px;
+    border-radius: 100px;
+    box-shadow: none;
+    font-weight: 500;
+
+    @include media-breakpoint-up(md) {
+    }
+
+    &:hover,
+    &:focus {
+      background: var(--secondary);
+      color: black;
+      box-shadow: none;
+    }
+
+    &:active {
+    }
+
+    &:not(:disabled):not(.disabled):active {
+      background: var(--secondary);
+      color: black;
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+
   &-outline-primary {
     font-size: 14px;
     color: rgb(255, 145, 16);
