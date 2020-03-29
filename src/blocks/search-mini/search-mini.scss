@@ -1,0 +1,45 @@
+.search-mini {
+  $block-name: &; // #{$block-name}__element {}
+  position: relative;
+  border-bottom: 1px solid var(--danger);
+
+  .form-control {
+    padding: 8px 30px 8px 0px;
+    height: auto;
+    border: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    color: black;
+    outline: none;
+
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.3);
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    border: none;
+    padding-right: 0;
+    background-color: transparent;
+    z-index: 3;
+    outline: none !important;
+    opacity: 0.3;
+
+    img {
+      width: 14px;
+    }
+  }
+
+  &--footer {
+    margin-top: 36px;
+  }
+}

@@ -19,7 +19,9 @@
     "navbar": [],
     "navbar-brand": [],
     "bootstrap-select": [],
-    "navbar-toggler": []
+    "navbar-toggler": [],
+    "social": [],
+    "search-mini": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
