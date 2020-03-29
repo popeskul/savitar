@@ -1,0 +1,38 @@
+.group-main {
+  $block-name: &; // #{$block-name}__element {}
+  margin-bottom: 36px;
+
+  &__title {
+    margin-bottom: 38px;
+  }
+
+  &__description {
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 160%;
+    margin-bottom: 59px;
+  }
+
+  &__card {
+    display: flex;
+    margin-bottom: 56px;
+
+    &__img {
+      flex: 0 0 100px;
+    }
+
+    &__description {
+    }
+
+    &__title {
+      margin-bottom: 14px;
+    }
+
+    p {
+      line-height: 27px;
+    }
+  }
+}

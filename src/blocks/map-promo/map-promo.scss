@@ -1,0 +1,30 @@
+.map-promo {
+  $block-name: &; // #{$block-name}__element {}
+  display: none;
+  background-color: #f7f6f4;
+  position: relative;
+  overflow: hidden;
+  margin-top: -88px;
+
+  @include media-breakpoint-up(lg) {
+    display: block;
+  }
+
+  &__img {
+    width: 1440px;
+  }
+
+  &__text {
+    position: absolute;
+    bottom: 8%;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__link {
+    display: inline-block;
+    width: 250px;
+    height: 25px;
+  }
+}

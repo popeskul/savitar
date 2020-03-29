@@ -5,6 +5,7 @@
   background-position: right top;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 89px;
 
   @include media-breakpoint-up(lg) {
     background-position: center top;

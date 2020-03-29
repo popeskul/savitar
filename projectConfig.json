@@ -25,7 +25,10 @@
     "main-promo": [],
     "search-promo": [],
     "card": [],
-    "slider-cards": []
+    "slider-cards": [],
+    "group-main": [],
+    "card-promo": [],
+    "map-promo": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
