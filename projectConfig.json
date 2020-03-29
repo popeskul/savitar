@@ -28,7 +28,9 @@
     "slider-cards": [],
     "group-main": [],
     "card-promo": [],
-    "map-promo": []
+    "map-promo": [],
+    "partners-promo": [],
+    "slider-partners": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

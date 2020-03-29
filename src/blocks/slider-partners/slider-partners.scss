@@ -1,0 +1,50 @@
+.slider-partners {
+  $block-name: &; // #{$block-name}__element {}
+  padding: 20px 0px 20px 0;
+
+  .slick-list {
+    padding-right: 20px;
+  }
+
+  .slick-slide {
+  }
+
+  .slick-dots {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0%, -50%);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    button {
+      font-size: 0;
+      border: none;
+      padding: 0;
+      margin: 0;
+      background-color: #cccfda;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      outline: none;
+    }
+
+    .slick-active {
+      button {
+        background-color: var(--danger);
+      }
+    }
+  }
+
+  &__item {
+  }
+
+  &__row {
+    margin-bottom: -60px;
+  }
+
+  &__img {
+    margin-bottom: 60px;
+  }
+}
