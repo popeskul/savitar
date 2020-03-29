@@ -5,12 +5,14 @@
 .page-header {
   $block-name: &; // #{$block-name}
   padding-top: 19px;
+  background-color: white;
 
   @include media-breakpoint-up(sm) {
   }
   @include media-breakpoint-up(md) {
   }
   @include media-breakpoint-up(lg) {
+    background-color: transparent;
   }
   @include media-breakpoint-up(xl) {
   }

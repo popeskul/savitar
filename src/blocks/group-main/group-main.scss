@@ -18,10 +18,22 @@
 
   &__card {
     display: flex;
+    flex-direction: column;
     margin-bottom: 56px;
 
+    @include media-breakpoint-up(lg) {
+      flex-direction: row;
+    }
+
     &__img {
-      flex: 0 0 100px;
+      text-align: center;
+      margin-bottom: 20px;
+
+      @include media-breakpoint-up(lg) {
+        flex: 0 0 100px;
+        text-align: left;
+        margin-bottom: 0;
+      }
     }
 
     &__description {

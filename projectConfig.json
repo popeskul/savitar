@@ -30,7 +30,9 @@
     "card-promo": [],
     "map-promo": [],
     "partners-promo": [],
-    "slider-partners": []
+    "slider-partners": [],
+    "news-catalog": [],
+    "promo-catalog": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

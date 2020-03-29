@@ -67,4 +67,37 @@
       }
     }
   }
+
+  &__article {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    font-weight: bold;
+
+    @include media-breakpoint-up(md) {
+    }
+
+    #{$block-name} {
+      &-header {
+        padding-left: 0;
+        padding-right: 0;
+        border: none;
+        font-size: 16px;
+        background-color: transparent;
+        color: #c4c7d2;
+      }
+      &-body {
+        padding: 7px 0 0 0;
+        font-size: 18px;
+        color: black;
+      }
+      &-footer {
+        padding: 0;
+        background-color: transparent;
+        border: none;
+      }
+      &-img {
+      }
+    }
+  }
 }

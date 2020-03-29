@@ -37,14 +37,12 @@
     }
   }
 
-  &__item {
-  }
-
   &__row {
     margin-bottom: -60px;
   }
 
   &__img {
     margin-bottom: 60px;
+    max-width: 100%;
   }
 }

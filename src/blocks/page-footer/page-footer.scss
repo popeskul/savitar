@@ -1,6 +1,6 @@
 .page-footer {
   $block-name: &;
-  padding-top: 75px;
+  padding-top: 50px;
   background-color: white;
 
   @include media-breakpoint-up(xs) {
@@ -8,6 +8,7 @@
   @include media-breakpoint-up(sm) {
   }
   @include media-breakpoint-up(md) {
+    padding-top: 75px;
   }
   @include media-breakpoint-up(lg) {
   }
@@ -31,11 +32,12 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
 
     @include media-breakpoint-up(lg) {
       flex-direction: row;
       justify-content: space-between;
+      padding-bottom: 60px;
     }
 
     .h4 {
@@ -84,7 +86,7 @@
   }
 
   &__main {
-    padding: 59px 0 64px 0;
+    padding: 40px 0 40px 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
