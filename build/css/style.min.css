@@ -5770,6 +5770,23 @@ a:hover, a:focus,
     margin-bottom: 41px; }
 .insurance-artilce__form > .form-group {
     margin-bottom: 41px; }
+.insurance-artilce__edit {
+    background: #ffffff;
+    -webkit-box-shadow: 0px 6px 30px #d6d7da;
+            box-shadow: 0px 6px 30px #d6d7da;
+    border-left: 5px solid var(--danger);
+    padding: 15px;
+    margin-bottom: 80px; }
+.insurance-artilce__edit .link-target {
+      margin-bottom: 42px; }
+.insurance-artilce__sign {
+    max-width: 519px;
+    margin: 0 auto; }
+.insurance-artilce__total {
+    margin-top: 58px;
+    text-align: center; }
+.insurance-artilce__total .btn {
+      min-width: 280px; }
 .steps {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5799,23 +5816,25 @@ a:hover, a:focus,
       margin-bottom: 0; }
 .steps__item.is-completed:not(:first-child)::before {
       background: #f26120; }
-.steps__item.is-completed .steps__marker {
-      background: #f26120;
-      border: 4px solid #f26120; }
+.steps__item.is-completed {
+      padding-left: 0;
+      margin-left: 0; }
+.steps__item.is-completed .steps__title {
+        color: black; }
 .steps__item.is-active:not(:first-child)::before {
       background: #f26120; }
-.steps__item.is-active {
-      margin-left: 0;
-      padding-left: 0; }
 .steps__item.is-active .steps__marker {
-        background: #f85b51;
-        border: 4px solid #f85b51;
-        border-top: none;
-        color: white;
-        -webkit-box-shadow: 0px 5px 15px 0px rgba(248, 91, 81, 0.5);
-                box-shadow: 0px 5px 15px 0px rgba(248, 91, 81, 0.5); }
+      background: #f85b51;
+      border: 4px solid #f85b51;
+      border-top: none;
+      color: white;
+      -webkit-box-shadow: 0px 5px 15px 0px rgba(248, 91, 81, 0.5);
+              box-shadow: 0px 5px 15px 0px rgba(248, 91, 81, 0.5); }
 .steps__item.is-active .steps__title {
-        color: black; }
+      color: black; }
+.steps__item.is-active:nth-child(1) {
+      padding-left: 0;
+      margin-left: 0; }
 .steps__item.steps__title {
       font-weight: 700; }
 .steps__title {
@@ -6204,6 +6223,30 @@ a:hover, a:focus,
           align-items: center; }
 .input-group.date .input-group-addon {
     padding-left: 10px; }
+.link-target {
+  display: inline-block;
+  color: var(--danger);
+  font-weight: bold; }
+.link-target:hover, .link-target:focus {
+    color: var(--danger); }
+.link-target img {
+    margin-right: 10px;
+    max-width: 25px; }
+.link-target span {
+    border-bottom: 2px dashed; }
+.table__promo {
+  font-size: 13px; }
+.table__promo tr:first-child td {
+    border-top: none; }
+.table__promo tr:last-child td {
+    border-bottom: none; }
+.table__promo tr td {
+    padding-bottom: 12px;
+    padding-top: 13px; }
+.table__promo tr td:first-child {
+      padding-left: 0; }
+.table__promo tr td:last-child {
+      padding-right: 0; }
 @media (min-width: 576px) {
     .container {
       max-width: 540px; }
@@ -7686,8 +7729,12 @@ a:hover, a:focus,
       .card__promo {
         width: 292px;
         padding: 34px 39px 30px 39px; }
+      .insurance-artilce__edit {
+        padding: 30px 30px; }
   .bootstrap-datetimepicker-widget.dropdown-menu.timepicker-sbs {
-    width: 38em; } }
+    width: 38em; }
+    .table__promo {
+      font-size: 16px; } }
 @media (min-width: 992px) {
     .container {
       max-width: 1050px; }
@@ -8487,6 +8534,8 @@ a:hover, a:focus,
       padding-bottom: 179px; }
     .news-catalog__wrapper {
       padding: 120px 0px; }
+      .insurance-artilce__edit {
+        padding: 79px 96px 79px 96px; }
     .steps {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;

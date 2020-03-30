@@ -1,0 +1,38 @@
+.table {
+  $block-name: &; // #{$block-name}__element {}
+
+  &__promo {
+    font-size: 13px;
+
+    @include media-breakpoint-up(md) {
+      font-size: 16px;
+    }
+
+    tr {
+      &:first-child {
+        td {
+          border-top: none;
+        }
+      }
+
+      &:last-child {
+        td {
+          border-bottom: none;
+        }
+      }
+
+      td {
+        padding-bottom: 12px;
+        padding-top: 13px;
+
+        &:first-child {
+          padding-left: 0;
+        }
+
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}

@@ -39,7 +39,9 @@
     "form-control": [],
     "custom-checkbox": [],
     "calendar": [],
-    "input-group": []
+    "input-group": [],
+    "link-target": [],
+    "table": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

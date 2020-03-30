@@ -23,11 +23,11 @@
 
                 <div class="insurance-artilce__steps">
                   <div class="steps">
-                    <div class="steps__item is-active">
+                    <div class="steps__item is-completed">
                       <div class="steps__marker">1</div>
                       <div class="steps__title">Заполнение данных</div>
                     </div>
-                    <div class="steps__item">
+                    <div class="steps__item is-active">
                       <div class="steps__marker">2</div>
                       <div class="steps__title">Проверка данных</div>
                     </div>
@@ -35,450 +35,131 @@
                 </div>
               </div>
 
-              <div class="insurance-artilce__info">
-                <div class="info-promo">
-                  <div class="h4 text-danger mb-3">ВНИМАНИЕ!</div>
-                  <p>
-                    Данный сервис не предназначен для передачи сообщений по
-                    экстренным случаям!
-                  </p>
-                  <p>
-                    Если в течение 20 минут Вы не получили от нас звонка, значит
-                    нам не удалось с Вами связаться. Пожалуйста, обратитесь
-                    повторно в
-                    <a href="#" class="text-danger">Call-центр</a> удобным для
-                    Вас способом или напишите в диалоговое окно на нашем сайте.
-                  </p>
+              <div class="insurance-artilce__edit">
+                <a href="#" class="link-target">
+                  <img src="img/edit.svg" alt="" />
+                  <span>Редактировать данные</span>
+                </a>
+
+                <table class="table table__promo">
+                  <tbody>
+                    <tr>
+                      <td>Номер полиса:</td>
+                      <td>
+                        <span class="font-weight-bold">001-169-093412/19</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Страховая компания::</td>
+                      <td>
+                        <span class="font-weight-bold"
+                          >Абсолют Страхование</span
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Период действия полиса:</td>
+                      <td>
+                        <span class="font-weight-bold"
+                          >с 2019-12-15 по 2020-01-17 (Годовой полис)</span
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Дата пересечения границы (выезд с ПМЖ):</td>
+                      <td><span class="font-weight-bold">2019-12-13</span></td>
+                    </tr>
+                    <tr>
+                      <td>Фамилия и Имя застрахованного, кому нужна помощь:</td>
+                      <td><span class="font-weight-bold">Ivanov Ivan</span></td>
+                    </tr>
+                    <tr>
+                      <td>Дата рождения застрахованного:</td>
+                      <td><span class="font-weight-bold">1985-12-18</span></td>
+                    </tr>
+                    <tr>
+                      <td>Дата наступления страхового случая:</td>
+                      <td><span class="font-weight-bold">2019-12-17</span></td>
+                    </tr>
+                    <tr>
+                      <td>Причина обращения(жалобы):</td>
+                      <td>
+                        <span class="font-weight-bold"
+                          >Поранил большой палец левой ноги, сломал ноготь,
+                          болит</span
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Место наступления страхового случая:</td>
+                      <td>
+                        <span class="font-weight-bold"
+                          >Italy, Milan, Via Perugino, 12</span
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Отель, апартаменты, номер комнаты:</td>
+                      <td>
+                        <span class="font-weight-bold">Hotel Perugino</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Номер телефона для связи с застрахованным:</td>
+                      <td>
+                        <span class="font-weight-bold">+7 916 777 77 77</span>
+                        <img src="img/whatsapp.svg" class="ml-4 mr-4" alt="" />
+                        <img src="img/viber.svg" alt="" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Номер телефона застрахованного в стране проживания:
+                      </td>
+                      <td>
+                        <span class="font-weight-bold">+7 916 777 77 77</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Фамилия и Имя заявителя страхового случая:</td>
+                      <td><span class="font-weight-bold">Ivanov Ivan</span></td>
+                    </tr>
+                    <tr>
+                      <td>Кем приходится заявитель застрахованному:</td>
+                      <td><span class="font-weight-bold">Отец</span></td>
+                    </tr>
+                    <tr>
+                      <td>Номер телефона заявителя:</td>
+                      <td>
+                        <span class="font-weight-bold">+7 926 406 25 05</span>
+                        <img src="img/whatsapp.svg" class="ml-4 mr-4" alt="" />
+                        <img src="img/viber.svg" alt="" />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="insurance-artilce__sign">
+                <div class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="defaultChecked2"
+                    checked
+                  />
+                  <label class="custom-control-label" for="defaultChecked2">
+                    Я ознакомлен и согласен с
+                    <span class="text-danger">
+                      Федеральным законом РФ от 27 июля 2006 года № 152-ФЗ «О
+                      персональных данных»
+                    </span>
+                  </label>
                 </div>
               </div>
 
-              <div class="insurance-artilce__container">
-                <div class="insurance-artilce__form">
-                  <p class="insurance-artilce__form__title-main">
-                    Сообщите, пожалуйста, данные о страховом случае для подачи в
-                    медицинскую-сервисную службу:
-                  </p>
-
-                  <div class="form-group row">
-                    <label
-                      for="staticEmail"
-                      class="col-12 col-lg-6 col-form-label"
-                    >
-                      Номер полиса:
-                    </label>
-                    <div class="col-12 col-lg-6">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="ХХХХХХХХХХХХХХ"
-                      />
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label
-                      for="inputPassword"
-                      class="col-12 col-lg-6 col-form-label"
-                    >
-                      Страховая компания:
-                    </label>
-                    <div class="col-12 col-lg-6">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Название страховой компании"
-                      />
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label
-                      for="inputPassword"
-                      class="col-12 col-lg-6 col-form-label"
-                    >
-                      Период действия полиса:
-                    </label>
-                    <div class="col-12 col-lg-6">
-                      <div class="form-row mb-4">
-                        <div class="col">
-                          <div class="form-group">
-                            <div class="input-group date" id="datetimepicker1">
-                              <input
-                                type="text"
-                                class="form-control"
-                                placeholder="ХХ-ХХ-ХХXX"
-                              />
-                              <span class="input-group-addon">
-                                <img src="img/calendar.svg" alt="" />
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col">
-                          <div class="form-group">
-                            <div class="input-group date" id="datetimepicker2">
-                              <input
-                                type="text"
-                                class="form-control"
-                                placeholder="ХХ-ХХ-ХХXX"
-                              />
-                              <span class="input-group-addon">
-                                <img src="img/calendar.svg" alt="" />
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-row">
-                        <div class="col">
-                          <div class="custom-control custom-checkbox">
-                            <input
-                              type="checkbox"
-                              class="custom-control-input"
-                              id="defaultChecked2"
-                            />
-                            <label
-                              class="custom-control-label"
-                              for="defaultChecked2"
-                            >
-                              Годовой полис
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label
-                      for="inputPassword"
-                      class="col-12 col-lg-6 col-form-label"
-                      >Дата пересечения границы (выезд с ПМЖ):
-                    </label>
-                    <div class="col-12 col-lg-6">
-                      <div class="row">
-                        <div class="col-12 col-sm-6">
-                          <div class="form-group">
-                            <div class="input-group date" id="datetimepicker3">
-                              <input
-                                type="text"
-                                class="form-control"
-                                placeholder="ХХ-ХХ-ХХXX"
-                              />
-                              <span class="input-group-addon">
-                                <img src="img/calendar.svg" alt="" />
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label
-                      for="staticEmail"
-                      class="col-12 col-lg-6 col-form-label"
-                    >
-                      Фамилия и Имя застрахованного, кому нужна помощь:
-                    </label>
-                    <div class="col-12 col-lg-6">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Ivanov Ivan"
-                      />
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label
-                      for="inputPassword"
-                      class="col-12 col-lg-6 col-form-label"
-                      >Дата рождения застрахованного:
-                    </label>
-                    <div class="col-12 col-lg-6">
-                      <div class="row">
-                        <div class="col-12 col-sm-6">
-                          <div class="form-group">
-                            <div
-                              class="input-group date"
-                              id="datetimepicker-birth"
-                            >
-                              <input
-                                type="text"
-                                class="form-control"
-                                placeholder="ХХ-ХХ-ХХXX"
-                              />
-                              <span class="input-group-addon">
-                                <img src="img/calendar.svg" alt="" />
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label
-                      for="inputPassword"
-                      class="col-12 col-lg-6 col-form-label"
-                      >Дата наступления страхового случая:
-                    </label>
-                    <div class="col-12 col-lg-6">
-                      <div class="row">
-                        <div class="col-12 col-sm-6">
-                          <div class="form-group">
-                            <div
-                              class="input-group date"
-                              id="datetimepicker-insurance-case"
-                            >
-                              <input
-                                type="text"
-                                class="form-control"
-                                placeholder="ХХ-ХХ-ХХXX"
-                              />
-                              <span class="input-group-addon">
-                                <img src="img/calendar.svg" alt="" />
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label
-                      for="staticEmail"
-                      class="col-12 col-lg-6 col-form-label"
-                    >
-                      Причина обращения (жалобы):
-                    </label>
-                    <div class="col-12 col-lg-6">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Поранил палец"
-                      />
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label
-                      for="staticEmail"
-                      class="col-12 col-lg-6 col-form-label"
-                    >
-                      Место наступления страхового случая:
-                    </label>
-                    <div class="col-12 col-lg-6">
-                      <div class="row">
-                        <div class="col-12">
-                          <div class="form-group">
-                            <input
-                              type="text"
-                              class="form-control"
-                              placeholder="Страна, город, улица, дом, № квартиры"
-                            />
-                          </div>
-                        </div>
-                        <div class="col-12 text-right">
-                          <a
-                            href="#"
-                            class="text-danger"
-                            style="border-bottom: 2px dashed;"
-                          >
-                            <img
-                              src="img/location.svg"
-                              style="margin-left: -25px;"
-                              alt=""
-                            />
-                            Указать адрес на карте
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label
-                      for="staticEmail"
-                      class="col-12 col-lg-6 col-form-label"
-                    >
-                      Отель, апартаменты, комната:
-                    </label>
-                    <div class="col-12 col-lg-6">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Название отеля, номер апартаментов, комнаты"
-                      />
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label
-                      for="staticEmail"
-                      class="col-12 col-lg-6 col-form-label"
-                    >
-                      Номер телефона для связи с застрахованным:
-                    </label>
-                    <div class="col-12 col-lg-6">
-                      <div class="form-row align-items-end">
-                        <div class="col-12 col-sm-5 mb-5 mb-lg-0">
-                          <input
-                            type="text"
-                            class="form-control"
-                            placeholder="+ Х ХХХ ХХХ ХХ ХХ"
-                          />
-                        </div>
-                        <div class="col ml-sm-4">
-                          <div class="custom-control custom-checkbox">
-                            <input
-                              type="checkbox"
-                              class="custom-control-input"
-                              id="check-whatsapp"
-                            />
-                            <label
-                              class="custom-control-label"
-                              for="check-whatsapp"
-                            >
-                              <img src="img/whatsapp.svg" alt="" />
-                            </label>
-                          </div>
-                        </div>
-                        <div class="col ml-sm-4">
-                          <div class="custom-control custom-checkbox">
-                            <input
-                              type="checkbox"
-                              class="custom-control-input"
-                              id="check-viber"
-                            />
-                            <label
-                              class="custom-control-label"
-                              for="check-viber"
-                            >
-                              <img src="img/viber.svg" alt="" />
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label
-                      for="staticEmail"
-                      class="col-12 col-lg-6 col-form-label"
-                    >
-                      Номер телефона застрахованного в стране проживания:
-                    </label>
-                    <div class="col-12 col-lg-6">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="+ Х ХХХ ХХХ ХХ ХХ"
-                      />
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label
-                      for="staticEmail"
-                      class="col-12 col-lg-6 col-form-label"
-                    >
-                      Фамилия и Имя заявителя страхового случая:
-                    </label>
-                    <div class="col-12 col-lg-6">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Ivanov Ivan"
-                      />
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label
-                      for="staticEmail"
-                      class="col-12 col-lg-6 col-form-label"
-                    >
-                      Кем приходится заявитель застрахованному:
-                    </label>
-                    <div class="col-12 col-lg-6">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Мать, отец, бабушка, сам заявитель"
-                      />
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label
-                      for="staticEmail"
-                      class="col-12 col-lg-6 col-form-label"
-                    >
-                      Номер телефона заявителя:
-                    </label>
-                    <div class="col-12 col-lg-6">
-                      <div class="form-row align-items-end">
-                        <div class="col-12 col-sm-5 mb-5 mb-lg-0">
-                          <input
-                            type="text"
-                            class="form-control"
-                            placeholder="+ Х ХХХ ХХХ ХХ ХХ"
-                          />
-                        </div>
-                        <div class="col ml-sm-4">
-                          <div class="custom-control custom-checkbox">
-                            <input
-                              type="checkbox"
-                              class="custom-control-input"
-                              id="check-whatsapp2"
-                            />
-                            <label
-                              class="custom-control-label"
-                              for="check-whatsapp2"
-                            >
-                              <img src="img/whatsapp.svg" alt="" />
-                            </label>
-                          </div>
-                        </div>
-                        <div class="col ml-sm-4">
-                          <div class="custom-control custom-checkbox">
-                            <input
-                              type="checkbox"
-                              class="custom-control-input"
-                              id="check-viber2"
-                            />
-                            <label
-                              class="custom-control-label"
-                              for="check-viber2"
-                            >
-                              <img src="img/viber.svg" alt="" />
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group row"><br /></div>
-                  <div class="form-group row">
-                    <label
-                      for="staticEmail"
-                      class="col-12 col-lg-6 col-form-label"
-                    >
-                      Загрузить фотографию электронного полиса или файл:
-                    </label>
-                    <div class="col-12 col-lg-6 text-right pt-5 pt-lg-0">
-                      <a
-                        href="#"
-                        class="text-danger"
-                        style="border-bottom: 2px dashed;"
-                      >
-                        <img
-                          src="img/download.svg"
-                          style="margin-left: -25px;"
-                          alt=""
-                        />
-                        Загрузить файл
-                      </a>
-                    </div>
-                  </div>
-                  <div class="form-group text-center">
-                    <button class="btn btn-danger">
-                      Сохранить и продолжить
-                    </button>
-                  </div>
-                </div>
+              <div class="insurance-artilce__total">
+                <button class="btn btn-danger">Сообщить</button>
               </div>
             </div>
           </div>
