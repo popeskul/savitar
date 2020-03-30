@@ -6,15 +6,21 @@
   $block-name: &; // #{$block-name}__element {}
 
   &-dialog {
-    max-width: 460px;
+    max-width: 980px;
 
     @include media-breakpoint-up(md) {
-      max-width: 460px;
+      max-width: 980px;
     }
   }
 
   &-content {
     border: none;
+    border-radius: 0;
+    padding: 40px 20px;
+
+    @include media-breakpoint-up(md) {
+      padding: 44px 74px;
+    }
   }
 
   &-body {

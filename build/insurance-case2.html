@@ -450,7 +450,7 @@
     <script src="js/script.min.js?1"></script>
     <div
       class="modal fade"
-      id="exampleModal"
+      id="success"
       tabindex="-1"
       role="dialog"
       aria-labelledby="exampleModalLabel"
@@ -458,15 +458,32 @@
     >
       <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <div class="modal-body">
+          <div class="modal-body text-center">
+            <p>
+              Благодарим Вас за обращение в медицинскую сервисную службу Савитар
+              Груп!
+            </p>
+            <p class="text-danger mt-5 mb-5 font-weight-bold">
+              Ваше сообщение успешно отправлено.
+            </p>
+            <p class="mb-5">
+              Пожалуйста, ожидайте, координатор свяжется с Вами в ближайшие 20
+              минут.
+            </p>
+            <p>
+              Если в течение 20 минут Вы не получили от нас звонка, значит нам не
+              удалось с Вами связаться. Пожалуйста, обратитесь повторно в
+              <a href="#" class="text-danger">Call-центр</a> удобным для Вас
+              способом или напишите в диалоговое окно на нашем сайте.
+            </p>
             <button
               type="button"
-              class="close"
               data-dismiss="modal"
               aria-label="Close"
+              class="btn btn-danger mt-3"
+              style="min-width: 280px;"
             >
-              <!-- <span aria-hidden="true">&times;</span> -->
-              <img src="" alt="" />
+              Закрыть
             </button>
           </div>
         </div>

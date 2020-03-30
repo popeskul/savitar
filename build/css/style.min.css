@@ -5313,9 +5313,11 @@ a:hover, a:focus,
       color: #515151;
       text-decoration: none; }
 .modal-dialog {
-  max-width: 460px; }
+  max-width: 980px; }
 .modal-content {
-  border: none; }
+  border: none;
+  border-radius: 0;
+  padding: 40px 20px; }
 .modal-body {
   padding: 0; }
 .modal .close {
@@ -5358,8 +5360,8 @@ a:hover, a:focus,
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  margin-top: 20px;
-  margin: 20px -15px 0px -15px; }
+  margin: 0px -15px 0px -15px;
+  padding-top: 20px; }
 .navbar-nav--header {
   margin-left: auto;
   margin-top: 30px;
@@ -7718,7 +7720,9 @@ a:hover, a:focus,
     .page-footer {
       padding-top: 75px; }
     .modal-dialog {
-      max-width: 460px; }
+      max-width: 980px; }
+    .modal-content {
+      padding: 44px 74px; }
       .main-promo__block {
         margin-bottom: 118px; }
       .main-promo__slider {
@@ -8493,7 +8497,8 @@ a:hover, a:focus,
       margin-top: 58px;
       margin-bottom: 12px; }
     .navbar-collapse--header {
-      margin: 0; }
+      margin: 0;
+      padding-top: 0; }
     .navbar-nav--header {
       padding-right: 8px;
       padding-bottom: 0;
