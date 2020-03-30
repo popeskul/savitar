@@ -5,14 +5,13 @@
 .page-header {
   $block-name: &; // #{$block-name}
   padding-top: 19px;
-  background-color: white;
+  padding-bottom: 14px;
 
   @include media-breakpoint-up(sm) {
   }
   @include media-breakpoint-up(md) {
   }
   @include media-breakpoint-up(lg) {
-    background-color: transparent;
   }
   @include media-breakpoint-up(xl) {
   }
@@ -68,6 +67,7 @@
     }
 
     img {
+      width: 11px;
       margin-right: 8px;
     }
   }
@@ -149,5 +149,26 @@
     left: 0;
     z-index: 3;
     width: 100%;
+    background-color: white;
+
+    @include media-breakpoint-up(lg) {
+      background-color: transparent;
+    }
+  }
+
+  &--static {
+    background-color: var(--danger);
+
+    .btn {
+      box-shadow: none;
+    }
+
+    .navbar-toggler {
+      color: white;
+      border-color: white;
+
+      .navbar-toggler-icon {
+      }
+    }
   }
 }

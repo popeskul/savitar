@@ -123,6 +123,16 @@
       text-decoration: none;
       opacity: 0.8;
     }
+
+    &--light {
+      color: white;
+
+      &:hover,
+      &:focus {
+        color: white;
+        opacity: 1;
+      }
+    }
   }
 
   &-light {
@@ -183,6 +193,26 @@
 
       &:focus {
         box-shadow: 0px 5px 15px 0px rgba(239, 93, 85, 0.5);
+      }
+    }
+
+    &--light {
+      background: white;
+      color: var(--danger);
+
+      &:hover,
+      &:focus {
+        background: white;
+        box-shadow: 0px 5px 15px 0px rgba(239, 93, 85, 0.5);
+        opacity: 1;
+      }
+
+      &:not(:disabled):not(.disabled):active {
+        background: white;
+
+        &:focus {
+          box-shadow: 0px 5px 15px 0px rgba(239, 93, 85, 0.5);
+        }
       }
     }
   }

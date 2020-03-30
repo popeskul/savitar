@@ -37,12 +37,24 @@ $(".slider-partners").slick({
   vertical: true
 });
 
-// $(document).ready(function() {
-//   $('#dropdown-service').on('click', function(e) {
-//     $('#navbarSupportedContent').removeClass('collapse show');
-//     $('#navbarSupportedContent').addClass('collapse');
-//     document
-//       .querySelector('#menu-mobile')
-//       .setAttribute('aria-expanded', 'false');
-//   });
-// });
+$(function() {
+  $("#datetimepicker1").datetimepicker({
+    format: "DD-MM-YYYY"
+  });
+
+  $("#datetimepicker2").datetimepicker({
+    format: "DD-MM-YYYY"
+  });
+
+  $("#datetimepicker3").datetimepicker({
+    format: "DD-MM-YYYY"
+  });
+
+  $("#datetimepicker-birth").datetimepicker({
+    format: "DD-MM-YYYY"
+  });
+
+  $("#datetimepicker-insurance-case").datetimepicker({
+    format: "DD-MM-YYYY"
+  });
+});

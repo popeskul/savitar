@@ -1,0 +1,17 @@
+.info-promo {
+  $block-name: &; // #{$block-name}__element {}
+  background: #ffffff;
+  box-shadow: 0px 6px 30px #d6d7da;
+  max-width: 981px;
+  margin: 0 auto;
+  border-left: 5px solid var(--danger);
+  padding: 30px 30px;
+
+  @include media-breakpoint-up(lg) {
+    padding: 32px 30px 32px 95px;
+  }
+
+  p {
+    line-height: normal;
+  }
+}

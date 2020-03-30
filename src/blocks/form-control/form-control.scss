@@ -1,0 +1,22 @@
+.form-control {
+  $block-name: &; // #{$block-name}__element {}
+  padding: 8px 30px 8px 0px;
+  height: auto;
+  border: none;
+  border-bottom: 1px solid #000000;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: black;
+  outline: none;
+  border-radius: 0px;
+
+  &:focus {
+    box-shadow: none;
+    border-bottom-color: #000000;
+  }
+
+  & + .input-group-prepend {
+    margin-left: 20px;
+  }
+}

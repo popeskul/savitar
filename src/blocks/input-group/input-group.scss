@@ -1,0 +1,13 @@
+.input-group {
+  $block-name: &; // #{$block-name}__element {}
+
+  &.date {
+    align-items: center;
+
+    #{$block-name} {
+      &-addon {
+        padding-left: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.custom-checkbox {
+  $block-name: &; // #{$block-name}__element {}
+  padding-left: 0;
+
+  .custom-control-label {
+    padding-left: 39px;
+
+    &:before {
+      left: 0;
+      width: 20px;
+      height: 20px;
+      border-radius: 0;
+      background-color: white;
+    }
+  }
+  .custom-control-input:checked ~ .custom-control-label {
+    &:before {
+      background-color: var(--danger);
+      border-color: var(--danger);
+      box-shadow: 0 0 0 0.2rem rgba(239, 93, 85, 0.5);
+    }
+
+    &:after {
+      left: 0px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .custom-control-input:not(:disabled):active ~ .custom-control-label::before {
+    background-color: var(--danger);
+    border-color: var(--danger);
+    box-shadow: 0 0 0 0.2rem rgba(239, 93, 85, 0.5);
+  }
+}
