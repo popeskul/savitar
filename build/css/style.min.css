@@ -5663,12 +5663,12 @@ a:hover, a:focus,
     margin-bottom: 38px; }
 .group-main__description {
     margin: 0 auto;
-    max-width: 850px;
+    max-width: 940px;
     width: 100%;
     font-weight: 800;
     font-size: 20px;
     line-height: 160%;
-    margin-bottom: 59px; }
+    margin-bottom: 88px; }
 .group-main__card {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5818,8 +5818,8 @@ a:hover, a:focus,
 .insurance-artilce__total {
     margin-top: 58px;
     text-align: center; }
-.insurance-artilce__total .btn {
-      min-width: 280px; }
+.insurance-artilce__btn-total {
+    min-width: 280px; }
 .steps {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5895,7 +5895,8 @@ a:hover, a:focus,
             box-shadow: inset 0px 0px 0px 2px #999999;
     font-weight: bold;
     font-size: 35px;
-    z-index: 1; }
+    z-index: 1;
+    padding-bottom: 2px; }
 .info-promo {
   background: #ffffff;
   -webkit-box-shadow: 0px 6px 30px #d6d7da;
@@ -8482,7 +8483,7 @@ a:hover, a:focus,
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        padding: 59px 15px 64px 12px; }
+        padding: 60px 15px 46px 12px; }
         .page-footer__main__logo {
           margin-right: 70px;
           -webkit-box-flex: 0;
@@ -8496,9 +8497,6 @@ a:hover, a:focus,
           -webkit-box-direction: normal;
               -ms-flex-direction: row;
                   flex-direction: row;
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center;
           margin-left: auto; }
         .page-footer__main__block {
           margin-right: 20px;
@@ -8577,7 +8575,7 @@ a:hover, a:focus,
       margin-top: -88px; }
     .partners-promo {
       padding-top: 175px;
-      padding-bottom: 179px; }
+      padding-bottom: 145px; }
     .news-catalog__wrapper {
       padding: 120px 0px; }
       .insurance-artilce__edit {
@@ -8601,7 +8599,7 @@ a:hover, a:focus,
         border: 1px dashed #999999;
         margin-top: -2px; }
     .info-promo {
-      padding: 32px 30px 32px 95px; }
+      padding: 32px 30px 23px 95px; }
   .bootstrap-datetimepicker-widget.dropdown-menu.timepicker-sbs {
     width: 38em; } }
 @media (min-width: 1200px) {

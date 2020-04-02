@@ -95,7 +95,7 @@
       margin-left: auto;
       flex-direction: row;
       align-items: center;
-      padding: 59px 15px 64px 12px;
+      padding: 60px 15px 46px 12px;
     }
 
     &__background {
@@ -133,7 +133,7 @@
 
       @include media-breakpoint-up(lg) {
         flex-direction: row;
-        align-items: center;
+        // align-items: flex-start;
         margin-left: auto;
       }
     }
