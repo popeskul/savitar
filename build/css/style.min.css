@@ -4932,10 +4932,13 @@ h4 {
 .h4,
 h4 {
   font-size: 20px; }
+a,
+.link {
+  outline: none; }
 a:hover, a:focus,
-.link:hover,
-.link:focus {
-  text-decoration: none !important; }
+  .link:hover,
+  .link:focus {
+    text-decoration: none !important; }
 .font-alter {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 .text-dark {
@@ -8545,7 +8548,7 @@ a:hover, a:focus,
               align-items: flex-start; }
     .main-promo {
       background-position: center top;
-      background-size: auto; }
+      background-size: cover; }
       .card__promo {
         height: 440px; }
       .card__promo--main {

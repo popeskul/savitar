@@ -9,7 +9,7 @@
 
   @include media-breakpoint-up(lg) {
     background-position: center top;
-    background-size: auto;
+    background-size: cover;
   }
 
   &__block {
