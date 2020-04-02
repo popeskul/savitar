@@ -10,11 +10,14 @@
   }
 
   img {
-    margin-right: 10px;
+    margin-right: 2px;
     max-width: 25px;
+    vertical-align: bottom;
   }
 
   span {
     border-bottom: 2px dashed;
+    padding-bottom: 3px;
+    letter-spacing: -0.3px;
   }
 }

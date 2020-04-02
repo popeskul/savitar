@@ -4936,6 +4936,10 @@ a:hover, a:focus,
 .link:hover,
 .link:focus {
   text-decoration: none !important; }
+.font-alter {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+.text-dark {
+  color: black !important; }
 .text-danger {
   color: var(--danger) !important; }
 .icon-headphone {
@@ -5147,7 +5151,7 @@ a:hover, a:focus,
     font-size: 16px;
     padding-left: 16px;
     letter-spacing: -0.3px;
-    margin-right: 15px;
+    margin-right: 11px;
     display: none; }
 .page-header__language {
     font-size: 13px; }
@@ -5166,6 +5170,8 @@ a:hover, a:focus,
 .page-header--static .navbar-toggler {
       color: white;
       border-color: white; }
+.page-header--static .btn-select .dropdown-toggle {
+      color: var(--danger) !important; }
 .page-footer {
   padding-top: 50px;
   background-color: white; }
@@ -5278,7 +5284,8 @@ a:hover, a:focus,
           -ms-flex-direction: column;
               flex-direction: column; }
 .page-footer__info__some > * {
-        margin-bottom: 20px; }
+        margin-bottom: 20px;
+        text-decoration: underline; }
 .page-footer__info__some > *:last-child {
           margin-right: 0;
           margin-bottom: 0; }
@@ -5406,6 +5413,16 @@ a:hover, a:focus,
   font-size: 15px;
   padding-right: 22px;
   height: 44px; }
+.bootstrap-select__promo .dropdown-toggle .filter-option {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
 .bootstrap-select__promo .dropdown-menu {
   margin: 0;
   border-radius: 0;
@@ -5544,7 +5561,8 @@ a:hover, a:focus,
 .search-promo__btn img {
       width: 23px; }
 .search-promo--main {
-    margin-top: 40px; }
+    margin-top: 40px;
+    max-width: 633px; }
 .card {
   background-size: cover; }
 .card__promo {
@@ -5569,7 +5587,9 @@ a:hover, a:focus,
 .card__promo .h3:last-child {
         margin-bottom: 0; }
 .card__promo .btn {
-      margin-top: 8px; }
+      margin-top: 8px;
+      max-width: 250px;
+      width: 100%; }
 .card__promo--mini .btn {
       width: 100%; }
 .card__article {
@@ -5578,6 +5598,7 @@ a:hover, a:focus,
     border: none;
     font-weight: bold; }
 .card__article .card-header {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
       padding-left: 0;
       padding-right: 0;
       border: none;
@@ -5639,7 +5660,7 @@ a:hover, a:focus,
     margin-bottom: 38px; }
 .group-main__description {
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 850px;
     width: 100%;
     font-weight: 800;
     font-size: 20px;
@@ -5705,6 +5726,8 @@ a:hover, a:focus,
   overflow: hidden;
   z-index: -1; }
 .map-promo__img {
+    margin: 0 auto;
+    display: block;
     width: 1440px; }
 .map-promo__text {
     position: absolute;
@@ -5719,6 +5742,10 @@ a:hover, a:focus,
 .partners-promo {
   padding-top: 40px;
   padding-bottom: 40px; }
+.partners-promo__description {
+    max-width: 250px; }
+.partners-promo__text {
+    font-size: 22px; }
 .slider-partners {
   padding: 20px 0px 20px 0; }
 .slider-partners .slick-list {
@@ -5768,7 +5795,7 @@ a:hover, a:focus,
 .insurance-artilce__steps {
     margin-bottom: 79px; }
 .insurance-artilce__info {
-    margin-bottom: 83px; }
+    margin-bottom: 88px; }
 .insurance-artilce__form__title-main {
     margin-bottom: 41px; }
 .insurance-artilce__form > .form-group {
@@ -5828,11 +5855,10 @@ a:hover, a:focus,
       background: #f26120; }
 .steps__item.is-active .steps__marker {
       background: #f85b51;
-      border: 4px solid #f85b51;
+      -webkit-box-shadow: inset 0px 0px 0px 2px #f85b51, 0px 5px 15px 0px rgba(248, 91, 81, 0.5);
+              box-shadow: inset 0px 0px 0px 2px #f85b51, 0px 5px 15px 0px rgba(248, 91, 81, 0.5);
       border-top: none;
-      color: white;
-      -webkit-box-shadow: 0px 5px 15px 0px rgba(248, 91, 81, 0.5);
-              box-shadow: 0px 5px 15px 0px rgba(248, 91, 81, 0.5); }
+      color: white; }
 .steps__item.is-active .steps__title {
       color: black; }
 .steps__item.is-active:nth-child(1) {
@@ -5848,6 +5874,7 @@ a:hover, a:focus,
 .steps__marker {
     width: 60px;
     height: 60px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     display: -ms-flexbox;
     display: -webkit-box;
     display: flex;
@@ -5861,7 +5888,8 @@ a:hover, a:focus,
             justify-content: center;
     background: white;
     color: #999999;
-    border: 2px solid #999999;
+    -webkit-box-shadow: inset 0px 0px 0px 2px #999999;
+            box-shadow: inset 0px 0px 0px 2px #999999;
     font-weight: bold;
     font-size: 35px;
     z-index: 1; }
@@ -6233,10 +6261,13 @@ a:hover, a:focus,
 .link-target:hover, .link-target:focus {
     color: var(--danger); }
 .link-target img {
-    margin-right: 10px;
-    max-width: 25px; }
+    margin-right: 2px;
+    max-width: 25px;
+    vertical-align: bottom; }
 .link-target span {
-    border-bottom: 2px dashed; }
+    border-bottom: 2px dashed;
+    padding-bottom: 3px;
+    letter-spacing: -0.3px; }
 .table__promo {
   font-size: 13px; }
 .table__promo tr:first-child td {
@@ -8521,6 +8552,12 @@ a:hover, a:focus,
         width: 580px; }
       .card__promo--mini {
         padding-right: 29px; }
+    .group-main__row {
+      margin-left: -20px;
+      margin-right: -20px; }
+    .group-main__row > [class*="col"] {
+      padding-left: 20px;
+      padding-right: 20px; }
       .group-main__card {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
@@ -9229,7 +9266,12 @@ a:hover, a:focus,
       .page-header__simple-list {
         margin-right: 55px; }
       .page-header__phone {
-        display: block; }
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
         .page-footer__main__logo {
           margin-right: 47px; }
         .page-footer__main__block--address {

@@ -228,6 +228,7 @@
 
       & > * {
         margin-bottom: 20px;
+        text-decoration: underline;
 
         @include media-breakpoint-up(lg) {
           margin-right: 40px;

@@ -69,7 +69,7 @@
                 <div class="page-header__info">
                   <button
                     type="button"
-                    class="btn btn-danger btn-danger--light page-header__btn-main"
+                    class="btn btn-danger bg-white text-dark page-header__btn-main"
                   >
                     <img src="img/lightning-promo.svg" alt="" />
                     Сообщить о страховом случае
@@ -98,7 +98,7 @@
                     class="btn btn-light btn-select page-header__phone"
                   >
                     <img src="img/phone-grey.svg" class="icon" alt="" />
-                    +7 (495) 987-17-75
+                    <span class="font-alter">+7 (495) 987-17-75</span>
 
                     <select class="bootstrap-select bootstrap-select__promo">
                       <option value="moscow">
@@ -184,7 +184,9 @@
                     <tr>
                       <td>Номер полиса:</td>
                       <td>
-                        <span class="font-weight-bold">001-169-093412/19</span>
+                        <span class="font-weight-bold font-alter"
+                          >001-169-093412/19</span
+                        >
                       </td>
                     </tr>
                     <tr>
@@ -198,14 +200,18 @@
                     <tr>
                       <td>Период действия полиса:</td>
                       <td>
-                        <span class="font-weight-bold"
+                        <span class="font-weight-bold font-alter"
                           >с 2019-12-15 по 2020-01-17 (Годовой полис)</span
                         >
                       </td>
                     </tr>
                     <tr>
                       <td>Дата пересечения границы (выезд с ПМЖ):</td>
-                      <td><span class="font-weight-bold">2019-12-13</span></td>
+                      <td>
+                        <span class="font-weight-bold font-alter"
+                          >2019-12-13</span
+                        >
+                      </td>
                     </tr>
                     <tr>
                       <td>Фамилия и Имя застрахованного, кому нужна помощь:</td>
@@ -213,11 +219,19 @@
                     </tr>
                     <tr>
                       <td>Дата рождения застрахованного:</td>
-                      <td><span class="font-weight-bold">1985-12-18</span></td>
+                      <td>
+                        <span class="font-weight-bold font-alter"
+                          >1985-12-18</span
+                        >
+                      </td>
                     </tr>
                     <tr>
                       <td>Дата наступления страхового случая:</td>
-                      <td><span class="font-weight-bold">2019-12-17</span></td>
+                      <td>
+                        <span class="font-weight-bold font-alter"
+                          >2019-12-17</span
+                        >
+                      </td>
                     </tr>
                     <tr>
                       <td>Причина обращения(жалобы):</td>
@@ -231,7 +245,7 @@
                     <tr>
                       <td>Место наступления страхового случая:</td>
                       <td>
-                        <span class="font-weight-bold"
+                        <span class="font-weight-bold font-alter"
                           >Italy, Milan, Via Perugino, 12</span
                         >
                       </td>
@@ -245,7 +259,9 @@
                     <tr>
                       <td>Номер телефона для связи с застрахованным:</td>
                       <td>
-                        <span class="font-weight-bold">+7 916 777 77 77</span>
+                        <span class="font-weight-bold font-alter"
+                          >+7 916 777 77 77</span
+                        >
                         <img src="img/whatsapp.svg" class="ml-4 mr-4" alt="" />
                         <img src="img/viber.svg" alt="" />
                       </td>
@@ -255,7 +271,9 @@
                         Номер телефона застрахованного в стране проживания:
                       </td>
                       <td>
-                        <span class="font-weight-bold">+7 916 777 77 77</span>
+                        <span class="font-weight-bold font-alter"
+                          >+7 916 777 77 77</span
+                        >
                       </td>
                     </tr>
                     <tr>
@@ -269,7 +287,9 @@
                     <tr>
                       <td>Номер телефона заявителя:</td>
                       <td>
-                        <span class="font-weight-bold">+7 926 406 25 05</span>
+                        <span class="font-weight-bold font-alter"
+                          >+7 926 406 25 05</span
+                        >
                         <img src="img/whatsapp.svg" class="ml-4 mr-4" alt="" />
                         <img src="img/viber.svg" alt="" />
                       </td>
@@ -288,10 +308,17 @@
                   />
                   <label class="custom-control-label" for="defaultChecked2">
                     Я ознакомлен и согласен с
-                    <span class="text-danger">
-                      Федеральным законом РФ от 27 июля 2006 года № 152-ФЗ «О
-                      персональных данных»
-                    </span>
+                    <a
+                      href="#"
+                      class="text-danger"
+                      style="text-decoration: underline;"
+                    >
+                      Федеральным законом РФ от
+                      <span class="font-alter">27</span> июля
+                      <span class="font-alter">2006</span> года №
+                      <span class="font-alter">152-ФЗ</span> «О персональных
+                      данных»
+                    </a>
                   </label>
                 </div>
               </div>
@@ -380,10 +407,16 @@
                     <div
                       class="page-footer__main__block page-footer__main__block--address"
                     >
-                      <p class="text-danger">Почтовый адрес головного офиса</p>
+                      <p class="text-white-50">
+                        Почтовый адрес головного офиса
+                      </p>
                       <div class="h4 text-white">
-                        Москва, 127051, пер. Большой Каретный, д.20/3 (1, 2-ой подъезд),
-                        3 этаж
+                        Москва, <span class="font-alter">127051</span>, пер. Большой
+                        Каретный, д.<span class="font-alter">20/3</span> (<span
+                          class="font-alter"
+                          >1</span
+                        >, <span class="font-alter">2</span>-ой подъезд),
+                        <span class="font-alter">3</span> этаж
                       </div>
                     </div>
 
@@ -393,7 +426,7 @@
                       <p class="text-danger text-nowrap">
                         Круглосуточная телефонная линия
                       </p>
-                      <a href="#" class="h3 text-white">8 (495) 987–17–75</a>
+                      <a href="#" class="h3 text-white font-alter">8 (495) 987–17–75</a>
                       <p class="text-white-50">в Москве</p>
                     </div>
 
@@ -428,7 +461,9 @@
               <div class="container">
                 <div class="page-footer__info__row">
                   <div class="page-footer__info__block">
-                    <p class="text-white-50">© Savitar group, 2008–2020</p>
+                    <p class="text-white-50">
+                      © Savitar group, <span class="font-alter">2008–2020</span>
+                    </p>
                   </div>
                   <div class="page-footer__info__block some page-footer__info__some">
                     <a href="#" class="text-white-50">Пользовательское соглашение</a>
@@ -467,12 +502,14 @@
               Ваше сообщение успешно отправлено.
             </p>
             <p class="mb-5">
-              Пожалуйста, ожидайте, координатор свяжется с Вами в ближайшие 20
+              Пожалуйста, ожидайте, координатор свяжется с Вами в ближайшие
+              <span class="font-alter">20</span>
               минут.
             </p>
             <p>
-              Если в течение 20 минут Вы не получили от нас звонка, значит нам не
-              удалось с Вами связаться. Пожалуйста, обратитесь повторно в
+              Если в течение <span class="font-alter">20</span> минут Вы не получили
+              от нас звонка, значит нам не удалось с Вами связаться. Пожалуйста,
+              обратитесь повторно в
               <a href="#" class="text-danger">Call-центр</a> удобным для Вас
               способом или напишите в диалоговое окно на нашем сайте.
             </p>

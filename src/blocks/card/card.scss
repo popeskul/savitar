@@ -43,6 +43,8 @@
 
     .btn {
       margin-top: 8px;
+      max-width: 250px;
+      width: 100%;
     }
 
     &--main {
@@ -79,6 +81,7 @@
 
     #{$block-name} {
       &-header {
+        font-family: $font-alternative;
         padding-left: 0;
         padding-right: 0;
         border: none;

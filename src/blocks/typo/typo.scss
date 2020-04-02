@@ -58,6 +58,14 @@ a,
   }
 }
 
+.font-alter {
+  font-family: $font-alternative;
+}
+
+.text-dark {
+  color: black !important;
+}
+
 .text-danger {
   color: var(--danger) !important;
 }
