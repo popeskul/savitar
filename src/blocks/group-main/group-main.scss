@@ -1,6 +1,10 @@
 .group-main {
   $block-name: &; // #{$block-name}__element {}
   margin-bottom: 36px;
+  padding-top: 260px;
+
+  @include media-breakpoint-up(md) {
+  }
 
   &__title {
     margin-bottom: 38px;

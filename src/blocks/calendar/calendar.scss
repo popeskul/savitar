@@ -376,3 +376,7 @@
 .calendar {
   $block-name: &; // #{$block-name}__element {}
 }
+
+.bootstrap-datetimepicker-widget {
+  font-family: $font-alternative;
+}

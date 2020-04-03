@@ -11,9 +11,13 @@
     font-style: normal;
     font-weight: 500;
     border-radius: 30px !important;
-    font-size: 18px;
+    font-size: 15px;
     color: black;
     outline: none;
+
+    @include media-breakpoint-up(md) {
+      font-size: 18px;
+    }
 
     &::placeholder {
       color: rgba(0, 0, 0, 0.6);
@@ -40,6 +44,9 @@
     img {
       width: 23px;
     }
+  }
+
+  &__input {
   }
 
   &--main {

@@ -28,9 +28,10 @@
 
   &__slider {
     overflow: hidden;
+    margin-bottom: -301px;
 
     @include media-breakpoint-up(md) {
-      margin-bottom: -220px;
+      // margin-bottom: -220px;
     }
   }
 
@@ -40,7 +41,7 @@
 
     @include media-breakpoint-up(md) {
       padding-top: 239px;
-      padding-bottom: 230px;
+      // padding-bottom: 230px;
     }
   }
 }

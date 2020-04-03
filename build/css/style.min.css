@@ -4924,10 +4924,10 @@ h2 {
 .h3,
 h3 {
   font-weight: bold;
-  font-size: 26px; }
+  font-size: 20px; }
 .h4,
 h4 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: bold; }
 .h4,
 h4 {
@@ -5517,7 +5517,8 @@ a:hover, a:focus,
     width: 100%;
     margin-bottom: 50px; }
 .main-promo__slider {
-    overflow: hidden; }
+    overflow: hidden;
+    margin-bottom: -301px; }
 .main-promo--index {
     padding-top: 150px;
     padding-bottom: 50px; }
@@ -5533,7 +5534,7 @@ a:hover, a:focus,
     font-style: normal;
     font-weight: 500;
     border-radius: 30px !important;
-    font-size: 18px;
+    font-size: 15px;
     color: black;
     outline: none; }
 .search-promo .form-control::-webkit-input-placeholder {
@@ -5658,7 +5659,8 @@ a:hover, a:focus,
 .slider-cards .slick-arrow.slick-disabled {
     display: none !important; }
 .group-main {
-  margin-bottom: 36px; }
+  margin-bottom: 36px;
+  padding-top: 260px; }
 .group-main__title {
     margin-bottom: 38px; }
 .group-main__description {
@@ -6253,6 +6255,8 @@ a:hover, a:focus,
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0; }
+.bootstrap-datetimepicker-widget {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 .input-group.date {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -7762,11 +7766,10 @@ a:hover, a:focus,
       padding: 44px 74px; }
       .main-promo__block {
         margin-bottom: 118px; }
-      .main-promo__slider {
-        margin-bottom: -220px; }
       .main-promo--index {
-        padding-top: 239px;
-        padding-bottom: 230px; }
+        padding-top: 239px; }
+      .search-promo .form-control {
+        font-size: 18px; }
       .card__promo {
         width: 292px;
         padding: 34px 39px 30px 39px; }
@@ -8437,6 +8440,12 @@ a:hover, a:focus,
     .h1,
     h1 {
       font-size: 48px; }
+    .h3,
+    h3 {
+      font-size: 26px; }
+    .h4,
+    h4 {
+      font-size: 22px; }
     .btn {
       font-size: 15px; }
     .page-header__logo {

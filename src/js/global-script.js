@@ -37,6 +37,27 @@ $(".slider-partners").slick({
   vertical: true
 });
 
+$(".search-promo__input").each(function() {
+  $(this).data("placeholder", $(this).attr("placeholder"));
+});
+
+function changePlaceholder() {
+  if ($(window).width() > 990) {
+    $(".search-promo__input").attr(
+      "placeholder",
+      "Введите страну для поиска информации о помощи"
+    );
+  } else {
+    $(".search-promo__input").each(function() {
+      $(this).attr("placeholder", "Введите страну для поиска");
+    });
+  }
+}
+
+$(window)
+  .resize(changePlaceholder)
+  .trigger("resize");
+
 $(function() {
   $("#datetimepicker1").datetimepicker({
     format: "DD-MM-YYYY"
