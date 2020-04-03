@@ -11,6 +11,9 @@
     background-position: center top;
     background-size: cover;
   }
+  @include media-breakpoint-up(xl) {
+    background-position: center;
+  }
 
   &__block {
     margin: 0 auto;

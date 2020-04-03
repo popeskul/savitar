@@ -9312,6 +9312,8 @@ a:hover, a:focus,
         margin-right: 24px; }
         .navbar-nav--header .nav-item .nav-link {
           font-size: 16px; }
+    .main-promo {
+      background-position: center; }
     .card-promo {
       padding: 10px 40px; } }
 @media (max-width: 700px) {
