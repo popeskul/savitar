@@ -1,5 +1,6 @@
 .form-control {
   $block-name: &; // #{$block-name}__element {}
+  font-family: $font-alternative;
   padding: 8px 30px 8px 0px;
   height: auto;
   border: none;
